@@ -1,0 +1,286 @@
+/* warning:spaghetti code */
+/* Kontrybucja P. Kawulak */
+body{  
+    font-family:Verdana;
+    font-size: 20px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 !important;
+    height: 100%; 
+    
+}
+footer{
+    text-align:center;
+}
+
+.nav{
+    width:100%;
+    height:calc(80px + 1vw);
+    padding:20px 0px;
+    background-color:white;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    text-align:center;
+    color:black;
+    
+    position:fixed; /*przyklejenie nawigacji do gory ekranu */
+    left:0;
+    top:0;
+    z-index:100;
+}
+#motto{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    color:white;
+    text-align:center;
+    
+}
+#content{
+    width:auto;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-color:white;
+    font-size:40px;
+    border-top:3px solid black;
+    height:auto;
+    color:black;
+}
+#wrapper{
+    height:50vw;
+    width:auto;
+    background-color:white;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.nav > ol{ /* zawartosc nav */
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    font-size:calc(9px + 1vw);
+    height:35px;  
+    
+    display:inline-block;
+}
+
+ol a{ /* zmiana koloru czcionki po najechaniu w nav*/
+    color:black;
+    text-decoration:none;
+    display:block;
+}
+
+ol > li{ /* zawartosc nav */
+    float:left;
+    width:19vw;
+    height:40px;
+    border-right:1px dashed black;  
+    margin-top:calc(20px + 1vw);
+    
+}
+ol > li:first-child{ /* lewy border od strony glownej */
+    border-left:1px dashed black;
+    
+}
+ol > li:hover > a{
+  color:grey;
+    
+}
+
+ol > li > ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    height:50px;
+    
+    display:none;
+}
+ol > li:hover > ul{
+    display:block;
+}
+
+ol > li > ul > li{
+  background-color:white;
+    position:relative;
+    z-index:100;
+    border-left:3px solid black;
+    border-right:3px solid black;  
+    
+}
+ol > li > ul > li >a:hover{ /* zmiana koloru czcionki i tla po najechaniu w podmenu oferty*/
+    color:white;
+    background-color:black;
+}
+ol > li >img{ /* logo firmy w navi */
+    height:calc(50px + 2.5vw);
+    margin-top:calc(10px - 2vw);
+}
+.parralax1{ /*obraz parralax*/
+    background-image:url("images/consite2.jpg");
+    height:100%;
+    width:auto;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.parralax2{ /*obraz parralax w realizacjach*/
+    background-image:url("images/162657211.jpg");
+    height:100%;
+    width:auto;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.parralax3{ /*obraz parralax w kontakcie*/
+    background-image:url("images/consite2b.jpg");
+    height:100%;
+    width:auto;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.parralax4{ /*obraz parralax w elewacji*/
+    background-image:url("images/elewacje.jpg");
+    height:100%;
+    width:auto;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.parralax5{ /*obraz parralax w remoncie*/
+    background-image:url("images/remontjpg.jpg");
+    height:100%;
+    width:auto;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.parralax6{ /*obraz parralax w budowie*/
+    background-image:url("images/build.jpg");
+    height:100%;
+    width:auto;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+   
+    
+
+#motto >h1{
+    font-size:4vw;
+}
+h1 > p{ /* czarne tlo motto */
+    background-color:black;
+    padding: 2vw 2vw;
+}
+#motto >h2{
+    font-size:3vw;
+    
+}  
+h2 > p{ /* czarne tlo motto */
+    background-color:black;
+    padding: 2vw 2vw;
+}
+#content > #wstep > .wstepL > img{
+    width:38vw;
+    float:left;
+     max-height:50%;
+    max-width:80%;
+    padding-bottom:400px;
+    padding-top:2vw;
+}
+.wstepL{
+    padding-left:6vw;
+}
+#wsteptekst{
+    
+    font-size:calc(12px + 1vw);
+}
+#wsteptekst > a{ /* brak koloru strzalki */
+   color:black; 
+    
+}
+
+footer{
+    margin-top:calc(20px + 1vw)
+    width:auto;
+    height:2vw;
+    background-color:grey;
+    font-size:calc(7px + 1vw);
+}
+#motto > a{
+    color:white;
+    
+}
+#kontaktobraz{
+    background-image:url("images/phonew.jpg");
+    filter:blur(8px);
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#realizacjeobraz{
+    background-image:url("images/162657211.jpg");
+    filter:blur(8px);
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:auto;
+}
+#kontakt{
+    background-color:black;
+    color: white;
+    font-weight: bold;
+    font-size:calc(12px + 1vw);
+    border: 3px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+#galeria{
+    margin-top:455px;
+    background-color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:1px solid black;
+    width:100%;
+    padding-bottom:calc(20px + 1vy);
+    padding-top:60px;
+}
+.gallery{
+    margin:10px 50px;
+    text-align:center;
+}
+
+.gallery img{
+    transition:1s;
+    padding:15px;
+    width:300px;
+}
+
+.gallery img:hover{
+    transform:scale(1.2);
+    
+}

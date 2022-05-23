@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--kontrybucja Arkadiusz N. & Dominik M -->
+<html lang="pl" style="height:100%;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Oficjalna strony firmy budowlanej 8DW">
+        <meta name="author" content="Arkadiusz Natanek IITiA">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>8DW</title>
+        <link rel="stylesheet" href="styl.css" type="text/css"/>
+        <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css"/>
+        <style>
+            body{
+                overflow: hidden;
+            }
+        </style>
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>"
+        <script src="javascript/jquery.scrollTo.min.js"></script>
+        <script>
+        jQuery(function($){
+            $.scrollTo(0); //reset scrolla   
+            $('#scrolldown').click(function(){ $.scrollTo($('#wsteptekst'), 900); });
+            $('#gotop').click(function(){ $.scrollTo($('body'), 900); });
+        }
+        );
+        </script>
+        
+        
+        
+    [if lt IE 9]>
+        <script src="javascript/html5shiv.min.js"></script>
+        <![endif]
+        <!--skrypt emulujacy znaczniki html5 na starszych przegladarkach -->
+    </head>
+    
+    
+    
+    
+    
+    <body>
+        
+        <nav class="nav">
+                    <ol>
+                        <li><a href="index.html"><span style="color:#F0E870;">Strona główna</span></a></li>
+                        <li><a href="#">Oferta</a>
+                            <ul>
+                                <li><a href="podstrony/Remonty.html">Remonty</a></li>
+                                <li style="border-top:1px dotted black;"><a href="podstrony/Budowaodzera.html">Budowa od zera</a></li>
+                                <li style="border-bottom:3px solid black; border-top:1px dotted black;"><a href="podstrony/elewacje.html">Elewacje</a></li>
+                            </ul>
+                        </li>
+                        <li><img src='images/logo.jpg' alt="B8W"/></li>
+                        <li><a href="podstrony/Realizacje.html">Realizacje</a> </li>
+                        <li><a href="podstrony/Kontakt.html">Kontakt</a></li>
+                        <div style="clear:both;"></div>
+                    </ol>
+                
+                
+        </nav>
+        
+            <div class="parralax1">
+                <div id="motto">
+                    <h1><p>Z pasji do Twych planów</p></h1>
+                    <a id="scrolldown" href="#"><i class="icon-down-open"></i></a>
+                </div>
+            </div>
+        
+        
+        <main>
+            <div id="content">
+                <div id="wstep">
+                    
+                    <div class="wstepL">
+                        <img src="images/logo.jpg"/>
+                    </div>
+                    
+                           <div style="text-align:justify; margin-top:100px;" id="wsteptekst">
+                               <a id="gotop" href="#"><i class="icon-up-open"></i></a>
+                                <header><h1>Witaj na oficjalnej stronie 8DW !</h1> </header> 
+                                    <article>
+                                        <p>Posiadamy szeroką ofertę usług i gwarantujemy najwyższą jakość wykonania.</p>
+                                        Nasz zespół posiada wieloletnie doświadczenie, a materiały, z których korzystamy, zawsze są najwyższej jakości
+                                        <p>Po więcej informacji, zapoznaj się z menu nawigacji powyżej</p>
+                                    </article>
+                           </div>
+                    
+                    
+                    
+                    <div style="clear:both;"></div>
+                </div>
+                
+                <footer>
+                Copyright &copy; 8DW-firma@gmail.com
+                
+            
+                </footer>
+            </div>
+                    
+        </main>        
+        
+            
+        
+        
+     
+    </body>
+
+
+
+</html>
+
